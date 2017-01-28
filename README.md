@@ -8,3 +8,6 @@ Install [Yarn](https://yarnpkg.com/en/docs/getting-started)
 
 Install Dependencies
   * `yarn install`
+
+Start Server
+  * `gulp serve`
