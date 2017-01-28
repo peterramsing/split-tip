@@ -1,1 +1,28 @@
-<h1>Tip Splitter</h1>
+<div ng-repeat="partner in $ctrl.partners">
+    <label>
+        {{partner.name}}
+        <input
+            ng-model="partner.hours"
+            type="number">
+    </label>
+</div>
+
+<h1>{{ $ctrl.test }}</h1>
+
+<button
+    ng-click="$ctrl.alertThings()">Alert</button>
+
+<input ng-model="$ctrl.tipTotal">
+    <button
+        ng-click="$ctrl.calculateTipSplit()"
+        type="button"
+        name="button">
+        Submit
+    </button>
+</input>
+
+<p>{{$ctrl.partners[0].tips}}</p>
+
+<p>{{$ctrl.partners[1].tips}}</p>
+
+<p>{{$ctrl.name}}</p>
