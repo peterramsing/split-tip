@@ -18,10 +18,8 @@ export default class TipSplitterController {
     }
 
     calculatePartnersTips() {
-        let foo = this.tps.calculateTipSplit(this.partners, this.tipTotal)
+        let returnedValue = this.tps.calculateTipSplit(this.partners, this.tipTotal)
 
-        console.log(foo.partners)
-
-        this.partners = foo.partners
+        this.partners = returnedValue.partners
     }
 }
