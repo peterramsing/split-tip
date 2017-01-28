@@ -1,0 +1,12 @@
+{
+  "name": "SplitTip",
+  "version": "1.0.0",
+  "description": "An app for splitting tips",
+  "main": "index.js",
+  "repository": {},
+  "author": "Peter Ramsing <hi@peterramsing.com>, Simon Lang <simon.gilbert.lang@gmail.com>, DeVeelopers",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.17.0"
+  }
+}
