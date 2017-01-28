@@ -15,9 +15,6 @@ export default class TipSplitterController {
         ]
 
         this.tipTotal = 0
-
-
-
     }
 
     calculatePartnersTips() {
@@ -26,16 +23,5 @@ export default class TipSplitterController {
         console.log(foo.partners)
 
         this.partners = foo.partners
-
-        // this.partners = .partners
-    }
-
-
-    // $onInit() {
-    //     this.test = 'test';
-    // }
-    //
-    alertThings() {
-        this.tps.doSomething()
     }
 }

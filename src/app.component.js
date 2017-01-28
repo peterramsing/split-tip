@@ -1,3 +1,3 @@
 export const AppComponent = {
-  template: require('./app.tpl.html')
+    template: require('./app.tpl.html')
 }

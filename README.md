@@ -10,7 +10,10 @@
 * [Download installer](https://yarnpkg.com/latest.msi)
 
 ### Install Dependencies
-  * `yarn install`
+* `yarn install`
 
 ### Start Server
-  * `yarn serve`
+* `yarn serve`
+
+### Run Tests
+* `yarn test`

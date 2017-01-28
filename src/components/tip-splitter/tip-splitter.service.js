@@ -1,8 +1,4 @@
 export class TipSplitterService {
-    doSomething() {
-        alert('hi')
-    }
-
     calculateTipSplit(partners, tipTotal) {
         let totalHours = 0
         let totalPayOut = 0
