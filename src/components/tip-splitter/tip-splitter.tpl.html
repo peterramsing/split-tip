@@ -14,15 +14,13 @@
 
 <input ng-model="$ctrl.tipTotal">
     <button
-        ng-click="$ctrl.calculateTipSplit()"
+        ng-click="$ctrl.calculatePartnersTips()"
         type="button"
         name="button">
         Submit
     </button>
 </input>
 
-<p>{{$ctrl.partners[0].tips}}</p>
-
-<p>{{$ctrl.partners[1].tips}}</p>
-
-<p>{{$ctrl.name}}</p>
+<ul>
+    <li ng-repeat="partner in $ctrl.partners">{{ partner.tips }}</li>
+</ul>
