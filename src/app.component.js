@@ -1,5 +1,3 @@
-import templateUrl from './app.tpl.html';
-
 export const AppComponent = {
-    template: templateUrl,
+  template: require('./app.tpl.html')
 }

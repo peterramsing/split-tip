@@ -1,9 +1,9 @@
 import angular from 'angular'
 
-import { TipSplitterComponent } from './tip-splitter/tip-splitter.component'
+import { TipSplitterModule } from './tip-splitter/tip-splitter.module'
 
 export const ComponentsModule = angular
     .module('app.components', [
-        TipSplitterComponent,
+        TipSplitterModule,
     ])
     .name

@@ -2,7 +2,7 @@ module.exports = {
     entry: "./src/app.module.js",
     output: {
         path: __dirname,
-        filename: "bundle.js"
+        filename: "./build/bundle.js"
     },
     devtool: "#inline-source-map",
     module: {
@@ -13,7 +13,11 @@ module.exports = {
                 query: {
                     presets: ['es2015']
                 }
-            }
+            },
+            {
+                test: /\.html$/,
+                loader: 'html'
+            },
         ]
     }
 };

@@ -1,5 +1,5 @@
 export class TipSplitterController {
-    constructor(TodoService) {
+    constructor() {
         'ngInject'
     }
 }
