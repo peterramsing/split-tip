@@ -2,7 +2,10 @@ export default class TipSplitterController {
     constructor(TipSplitterService) {
         'ngInject'
         this.tps = TipSplitterService
+        this.tipTotal = 100
+        this.bills
 
+        // This is just to set things up before the backend is added.
         this.partners = [
             {
                 name: 'partner0',
@@ -13,13 +16,12 @@ export default class TipSplitterController {
                 hours: 0,
             },
         ]
-
-        this.tipTotal = 0
     }
 
     calculatePartnersTips() {
         let returnedValue = this.tps.calculateTipSplit(this.partners, this.tipTotal)
 
         this.partners = returnedValue.partners
+        this.bills = returnedValue.bills
     }
 }
