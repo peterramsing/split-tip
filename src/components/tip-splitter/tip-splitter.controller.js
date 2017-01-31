@@ -2,7 +2,7 @@ export default class TipSplitterController {
     constructor(TipSplitterService) {
         'ngInject'
         this.tps = TipSplitterService
-        this.tipTotal = 100
+        this.tipTotal = 0
         this.bills
 
         // This is just to set things up before the backend is added.
