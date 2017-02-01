@@ -7,7 +7,7 @@
   "author": "Peter Ramsing <hi@peterramsing.com>, Simon Lang <simon.gilbert.lang@gmail.com>, DeVeelopers",
   "license": "MIT",
   "scripts": {
-    "serve": "cp src/index.html build/index.html && webpack-dev-server --devtool eval --config webpack.config.js --progress --colors --hot --content-base build",
+    "serve": "rm -rf build && mkdir build && cp src/index.html build/index.html && webpack-dev-server --devtool eval --config webpack.config.js --progress --colors --hot --content-base build --inline",
     "test" : "ava src/**/*.spec.js"
   },
   "devDependencies": {
