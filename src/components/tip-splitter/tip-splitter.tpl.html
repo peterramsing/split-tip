@@ -1,0 +1,31 @@
+<div ng-repeat="partner in $ctrl.partners">
+    <label>
+        {{partner.name}}
+        <input
+            ng-model="partner.hours"
+            type="number">
+    </label>
+</div>
+
+<input ng-model="$ctrl.tipTotal">
+    <button
+        ng-click="$ctrl.calculatePartnersTips()"
+        type="button"
+        name="button">
+        Submit
+    </button>
+</input>
+
+<ul>
+    <li ng-repeat="partner in $ctrl.partners">{{ partner.tips }}</li>
+</ul>
+
+<h3>Bills</h3>
+<ul>
+    <li>$100: {{ $ctrl.bills.d100 }}</li>
+    <li>$50: {{ $ctrl.bills.d50 }}</li>
+    <li>$20: {{ $ctrl.bills.d20 }}</li>
+    <li>$10: {{ $ctrl.bills.d10 }}</li>
+    <li>$5: {{ $ctrl.bills.d5 }}</li>
+    <li>$1: {{ $ctrl.bills.d1 }}</li>
+</ul>
