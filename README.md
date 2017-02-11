@@ -3,9 +3,11 @@
 ## Getting Started
 
 ### Install [Yarn](https://yarnpkg.com/en/docs/getting-started)
+
 ##### *On Mac*
 * `brew update`
 * `brew install yarn`
+
 #### *On Windows*
 * [Download installer](https://yarnpkg.com/latest.msi)
 
