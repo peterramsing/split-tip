@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "serve": "rm -rf build && mkdir build && cp src/index.html build/index.html && webpack-dev-server --devtool eval --config webpack.config.js --progress --colors --hot --content-base build --inline",
-    "test" : "ava src/**/*.spec.js"
+    "test": "ava src/**/*.spec.js"
   },
   "devDependencies": {
     "angular": "^1.6.1",
