@@ -6,17 +6,14 @@ module.exports = {
     },
     devtool: 'source-map',
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
-                loader: 'babel',
-                query: {
-                    presets: ['es2015']
-                }
+                loader: 'babel-loader'
             },
             {
                 test: /\.html$/,
-                loader: 'html'
+                loader: 'html-loader'
             },
         ]
     }
