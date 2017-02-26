@@ -1,0 +1,36 @@
+<div class="row">
+  <section class="col-xs-12">
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="inputEmail">Email Address</label>
+        <input
+          [(ngModel)]="userEmail"
+          type="text"
+          placeholder="Email"
+          name="email"
+          id="inputEmail"
+          class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input
+          [(ngModel)]="userPassword"
+          type="password"
+          placeholder="Password"
+          name="password"
+          id="inputPassword"
+          class="form-control">
+      </div>
+      <div class="form-group">
+        <button
+          (click)="login()"
+          class="btn btn-primary">Login</button>
+      </div>
+    </form>
+
+    <button
+      (click)="logout()"
+      class="btn btn-danger">Log Out</button>
+  </section>
+
+</div>

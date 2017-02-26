@@ -3,9 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2'
+
 import { AppComponent } from './app.component';
 
-import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2'
+import { AuthComponent } from './components/auth.component'
+import { TipSplitterComponent } from './components/tip-splitter.component'
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyA3JPZ1nA1Jdyoh6kqrVw2UtQWV4ARKXws',
@@ -22,7 +25,10 @@ export const firebaseAuthConfig = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
+    AuthComponent,
+    TipSplitterComponent,
   ],
   imports: [
     BrowserModule,
