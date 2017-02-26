@@ -1,3 +1,30 @@
-<h1>
-  {{title}}
-</h1>
+<div *ngFor="let partner of partners">
+  <label>
+    {{partner.name}}
+    <input
+      [(ngModel)]="partner.hours"
+      type="number">
+  </label>
+</div>
+
+
+<input [(ngModel)]="tipTotal" type="number">
+<button
+  (click)="calculatePartnersTips()"
+  type="button">
+  Submit
+</button>
+
+<ul>
+  <li *ngFor="let partner of partners">{{ partner.tips }}</li>
+</ul>
+
+<h3>Bills</h3>
+<ul>
+  <li>$100: {{ bills.d100 }}</li>
+  <li>$50: {{ bills.d50 }}</li>
+  <li>$20: {{ bills.d20 }}</li>
+  <li>$10: {{ bills.d10 }}</li>
+  <li>$5: {{ bills.d5 }}</li>
+  <li>$1: {{ bills.d1 }}</li>
+</ul>
