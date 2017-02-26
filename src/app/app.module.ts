@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
-import { AngularFireModule } from 'angularfire2'
+import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2'
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyA3JPZ1nA1Jdyoh6kqrVw2UtQWV4ARKXws',
@@ -13,6 +13,11 @@ export const firebaseConfig = {
   databaseURL: 'https://split-tip-dev.firebaseio.com',
   storageBucket: 'split-tip-dev.appspot.com',
   messagingSenderId: '236921874285',
+}
+
+export const firebaseAuthConfig = {
+  provider: AuthProviders.Password,
+  method: AuthMethods.Password,
 }
 
 @NgModule({
@@ -23,7 +28,7 @@ export const firebaseConfig = {
     BrowserModule,
     FormsModule,
     HttpModule,
-    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireModule.initializeApp(firebaseConfig, firebaseAuthConfig),
   ],
   providers: [],
   bootstrap: [AppComponent]
