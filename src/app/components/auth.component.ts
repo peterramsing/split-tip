@@ -9,9 +9,7 @@ import { AngularFire } from 'angularfire2'
 export class AuthComponent {
 
   constructor(public af: AngularFire) {
-
     this.af.auth.subscribe(auth => {
-      console.log(auth)
       this.userEmail = ''
       this.userPassword = ''
     })
@@ -22,10 +20,6 @@ export class AuthComponent {
       email: this.userEmail,
       password: this.userPassword,
     })
-  }
-
-  logout() {
-    this.af.auth.logout()
   }
 
   userEmail = ''
