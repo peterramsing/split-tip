@@ -37,10 +37,12 @@ export class AppComponent {
 
   partners = [
     {
+      id: 1234,
       name: 'partner0',
       hours: 0,
     },
     {
+      id: 1235,
       name: 'partner1',
       hours: 0,
     },
