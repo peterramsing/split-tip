@@ -2,6 +2,9 @@
   <section class="col-xs-12 col-sm-4">
     <form class="form-horizontal">
 
+      <p *ngFor="let foo of foos | async"> {{ foo.name }}</p>
+
+
       <div
         *ngFor="let partner of partners"
         class="form-group">
@@ -20,6 +23,10 @@
 
       </div>
 
+      <button
+        (click)="savePartner('test')">
+        test
+      </button>
 
       <div class="form-group">
         <label class="sr-only" for="tipTotal">Amount (in dollars)</label>
