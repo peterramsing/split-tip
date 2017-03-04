@@ -8,7 +8,7 @@ import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2'
 import { AppComponent } from './app.component';
 
 import { AuthComponent } from './auth/auth.component'
-import { TipSplitterComponent } from './components/tip-splitter.component'
+import { TipSplitterComponent } from './tip-splitter/tip-splitter.component'
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyA3JPZ1nA1Jdyoh6kqrVw2UtQWV4ARKXws',
