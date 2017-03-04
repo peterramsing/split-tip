@@ -1,54 +1,14 @@
 import { Component } from '@angular/core';
 
-import { AngularFire, FirebaseListObservable } from 'angularfire2'
-
 @Component({
   selector: 'tip-splitter',
   templateUrl: 'tip-splitter.component.html',
 })
-
 export class TipSplitterComponent {
 
-  foos: FirebaseListObservable<any>
 
   tipTotal = 0
   bills = {}
-
-  constructor(af: AngularFire) {
-    this.foos = af.database.list('/partners')
-
-    console.log(this.foos)
-
-    // const itemObservable = af.database.object('/foo')
-    // itemObservable.set({ name: 'new name2!'})
-
-    // console.log(this.foo)
-
-
-    // const queryList = af.database.list('/foo', {
-    //   query: {
-    //     limitToLast: 10,
-    //     orderByKey: true
-    //   }
-    // })
-    //
-    // console.log(queryList)
-  }
-
-
-
-
-  savePartner(newName: string) {
-    let random = Math.floor(Math.random() * (100000))
-    this.foos.push({
-      id: random,
-      name: newName,
-    })
-  }
-
-
-
-
 
   partners = [
     {
