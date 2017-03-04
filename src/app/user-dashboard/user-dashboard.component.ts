@@ -9,9 +9,13 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 export class UserDashboardComponent implements OnInit {
   partners: FirebaseListObservable<any>;
   stores: FirebaseListObservable<any>;
+
+  user
+
   constructor(public af: AngularFire) {
     this.af.auth.subscribe(auth => {
-  
+      this.user = auth
+      console.log(this.user)
     })
    this.partners = this.af.database.list('/partners');
    this.stores = this.af.database.list('/stores');
@@ -20,6 +24,8 @@ export class UserDashboardComponent implements OnInit {
 
   ngOnInit() {
   }
+
+
 
 
   createPartner () {
@@ -38,7 +44,7 @@ export class UserDashboardComponent implements OnInit {
     this.stores.push({
       storeNumber: 1234,
       storeName: 'cheese',
-
+      associatedUser: this.user.uid,
     })
 
   }
