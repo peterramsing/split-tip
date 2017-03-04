@@ -1,11 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'tip-splitter',
-  templateUrl: 'tip-splitter.component.html',
+  selector: 'app-tip-splitter',
+  templateUrl: './tip-splitter.component.html',
+  styleUrls: ['./tip-splitter.component.css']
 })
-export class TipSplitterComponent {
+export class TipSplitterComponent implements OnInit {
 
+  constructor() { }
+
+  ngOnInit() {
+  }
 
   tipTotal = 0
   bills = {}
@@ -103,6 +108,5 @@ export class TipSplitterComponent {
     this.partners = returnedValue.partners
     this.bills = returnedValue.bills
   }
-
 
 }

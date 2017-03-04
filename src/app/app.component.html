@@ -1,4 +1,8 @@
 
+<app-user-dashboard></app-user-dashboard>
+
+
+
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
@@ -8,11 +12,11 @@
   <br>
 
   <div *ngIf="!(af.auth | async)">
-    <auth></auth>
+    <app-auth></app-auth>
   </div>
 
   <div *ngIf="af.auth | async">
-      <tip-splitter></tip-splitter>
+      <app-tip-splitter></app-tip-splitter>
   </div>
 
   <footer class="row">
