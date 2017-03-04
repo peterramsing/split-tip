@@ -9,7 +9,8 @@ import { AppComponent } from './app.component';
 
 import { AuthComponent } from './auth/auth.component'
 import { TipSplitterComponent } from './tip-splitter/tip-splitter.component';
-import { UserDashboardComponent } from './user-dashboard/user-dashboard.component'
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { AddPartnerComponent } from './add-partner/add-partner.component'
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyA3JPZ1nA1Jdyoh6kqrVw2UtQWV4ARKXws',
@@ -31,6 +32,7 @@ export const firebaseAuthConfig = {
     AuthComponent,
     TipSplitterComponent,
     UserDashboardComponent,
+    AddPartnerComponent,
   ],
   imports: [
     BrowserModule,
